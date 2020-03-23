@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "AlwaysInMyHeart";
+    src: url("../fonts/AlwaysInMyHeart.eot");
+    src: url("../fonts/AlwaysInMyHeart.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/AlwaysInMyHeart.otf") format("opentype"),
+      url("../fonts/AlwaysInMyHeart.svg") format("svg"),
+      url("../fonts/AlwaysInMyHeart.ttf") format("truetype"),
+      url("../fonts/AlwaysInMyHeart.woff") format("woff"),
+      url("../fonts/AlwaysInMyHeart.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "Nilland";
+    src: url("../fonts2/Nilland.eot");
+    src: url("../fonts2/Nilland.eot?#iefix") format("embedded-opentype"),
+      url("../fonts2/Nilland.otf") format("opentype"),
+      url("../fonts2/Nilland.svg") format("svg"),
+      url("../fonts2/Nilland.ttf") format("truetype"),
+      url("../fonts2/Nilland.woff") format("woff"),
+      url("../fonts2/Nilland.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+h1{
+    font-size: 94px;
+    line-height: 117px;
+    color: #fff;
+}
+h2{
+    font-size: 58px;
+    line-height: 72px;
+    color: #5ac4be;
+}
+p{
+    font-size: 18px;
+    line-height: 23px;
+    color: #949494;
+    margin: 0;
+    font-family: "Nilland";
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+    font-family: "AlwaysInMyHeart" ;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+figure{
+    border: 0;
+    margin: 0;
+}
+.main-container{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --primary-color: #5ac4be;
+    --secondary-color: #707070;
+    --terceary-color: #949494;
+    --font1: "AlwaysInMyHeart";
+    --font2: "Nilland";
+
+}
+
+/**************************
+HERO-BANNER
+**************************/
+.main-hero-banner{
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: center center;
+}
+.hero-banner{
+    position: relative;
+    height: 712px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.hero-banner p{
+    position: absolute;
+    bottom: 12%;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+.hero-banner p a{
+    color: var(--color-white);
+    font-size: 52px;
+    line-height: 21px;
+}
+.hero-banner p:hover{
+    background-color: var(--secondary-color);
+}
+
+/*************************
+DESCRIPTION
+*************************/
+.title{
+    text-align: center;
+}
+.title h2{
+    margin-top: 91px;
+    margin-bottom: 15px;
+}
+.title p{
+    max-width: 557px;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cards-global{
+    display: flex;
+}
+.cards-global figure:not(:last-child){
+    margin-right: 44px;
+}
+.cards-global figcaption{
+    margin: 0;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--secondary-color);
+    font-family: var(--font2);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 91px;
+}
+
+.cards-global figure figcaption{
+    font-family: 'Linearicons';
+}
+
+.cards-global figure figcaption::before{
+    content: "\e68c";
+}
+.cards-global figure figcaption::after{
+    content: "\e68c";
+}
+
+/*************************
+MY-GALLERY
+*************************/
+.title2{
+    text-align: center;
+}
+.title2 p{
+    display: inline-block;
+    margin-bottom: 77px;
+}
+.my-gallery{
+    margin-bottom: 91px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery figure{
+    position: relative;
+    margin-bottom: 20px;
+}
+.gallery figure figcaption{
+    position: absolute;
+    color: var(--color-white);
+    
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    background-color: rgba(90, 196, 190, 0.67);
+    opacity: 0;
+    transition: all 0.3s;
+    font-family: var(--font1);
+    font-weight: 400;
+}
+.gallery figure figcaption:hover{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.gallery figure figcaption{
+    font-family: 'Linearicons';
+}
+.gallery figure figcaption::before{
+    content: "\e68c";
+}
+.gallery figure figcaption::after{
+    content: "\e68c";
+}
+
+/***********************
+MY-FOOTER
+***********************/
+.main-footer{
+    background-color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.footer ul{
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 75px;
+    padding-bottom: 9px;
+}
+.footer ul li{
+    background-color: var(--color-black);
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+.footer ul a {
+    color: var(--color-white);
+    font-size: 22px;
+}
+.footer p{
+    color: var(--secondary-color);
+    padding-bottom: 74px;
+}
+.footer p>a{
+    color: var(--primary-color);
+}
+.footer ul li:not(:last-child){
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 1075px) {
+    h1 {
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .hero-banner {
+        height: 550px;
+    }
+    .cards-global figcaption{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .hero-banner {
+        height: 550px;
+    }
+    .cards-global figcaption{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 992px) {
+
+    .cards-global figcaption{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /******** HERO BANNER ************/
+    .hero-banner {
+        height: 430px;
+    }
+    .hero-banner p{
+        width: 65px;
+        height: 65px;
+    }
+    .hero-banner p a{  
+        font-size: 32px;
+        line-height: 101px;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 78px;
+    }
+
+    /********** DESCRIPTION **********/
+    .title h2{
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    .title p{
+        width: 70%;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .cards-global {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-global figure:not(:last-child) {
+        margin-right: 0;
+    }
+    .cards-global figcaption{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    /********** FOOTER ************/
+    .footer ul{
+        padding-top: 45px;
+        padding-bottom: 9px;
+    }
+    .footer ul li{
+        background-color: #000;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .footer ul a {
+        font-size: 18px;
+    }
+    .footer p{
+        padding-bottom: 44px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 52px;
+        line-height: 48px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 38px;
+    }
+
+}
