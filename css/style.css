@@ -141,7 +141,7 @@ DESCRIPTION
 .cards-global figure:not(:last-child){
     margin-right: 44px;
 }
-.cards-global figcaption{
+.cards-global figure figcaption{
     margin: 0;
     font-size: 28px;
     line-height: 34px;
@@ -153,14 +153,13 @@ DESCRIPTION
     margin-bottom: 91px;
 }
 
-.cards-global figure figcaption{
-    font-family: 'Linearicons';
-}
-
 .cards-global figure figcaption::before{
+    font-family: "linearicons";
     content: "\e68c";
+    
 }
 .cards-global figure figcaption::after{
+    font-family: "linearicons";
     content: "\e68c";
 }
 
@@ -177,16 +176,16 @@ MY-GALLERY
 .my-gallery{
     margin-bottom: 91px;
 }
-.gallery{
+.my-gallery .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.gallery figure{
+.my-gallery .gallery figure{
     position: relative;
     margin-bottom: 20px;
 }
-.gallery figure figcaption{
+.my-gallery .gallery figure figcaption{
     position: absolute;
     color: var(--color-white);
     
@@ -199,23 +198,24 @@ MY-GALLERY
     align-items: center;
     font-size: 26px;
     background-color: rgba(90, 196, 190, 0.67);
-    opacity: 0;
+    
     transition: all 0.3s;
     font-family: var(--font1);
     font-weight: 400;
 }
-.gallery figure figcaption:hover{
+.my-gallery .gallery figure figcaption:hover{
     opacity: 1;
     transition: all 0.3s;
 }
 
-.gallery figure figcaption{
+.my-gallery .gallery figure figcaption::before{
     font-family: 'Linearicons';
-}
-.gallery figure figcaption::before{
+    font-size: 18px;
     content: "\e68c";
 }
-.gallery figure figcaption::after{
+.my-gallery .gallery figure figcaption::after{
+    font-family: 'Linearicons';
+    font-size: 18px;
     content: "\e68c";
 }
 
