@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+figure{
+    border: 0;
+    margin: 0;
+}
+.main-container{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cards{
+    background-image: url(../img/gallery4.png);
+    background-repeat: no-repeat;
+    width: 344px;
+    height: 344px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards span{
+    position: relative;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 0;
+}
+.cards span::before{
+    font-family: 'Linearicons';
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    content: "\e68c";
+}
+.cards span::after{
+    font-family: 'Linearicons';
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    content: "\e68c";
+}
+.cards span:hover{
+    opacity: 1;
+    background-color: teal;
+}
