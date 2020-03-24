@@ -198,7 +198,7 @@ MY-GALLERY
     align-items: center;
     font-size: 26px;
     background-color: rgba(90, 196, 190, 0.67);
-    
+    opacity: 0;
     transition: all 0.3s;
     font-family: var(--font1);
     font-weight: 400;
@@ -293,8 +293,6 @@ MY-FOOTER
     margin-right: 20px;
 }
 
-
-
 @media screen and (max-width: 1075px) {
     h1 {
         font-size: 80px;
@@ -303,7 +301,7 @@ MY-FOOTER
     .hero-banner {
         height: 550px;
     }
-    .cards-global figcaption{
+    .cards-global figure figcaption{
         font-size: 24px;
     }
 }
@@ -316,13 +314,13 @@ MY-FOOTER
     .hero-banner {
         height: 550px;
     }
-    .cards-global figcaption{
+    .cards-global figure figcaption{
         font-size: 22px;
     }
 }
 @media screen and (max-width: 992px) {
 
-    .cards-global figcaption{
+    .cards-global figure figcaption{
         font-size: 18px;
     }
 }
@@ -367,7 +365,7 @@ MY-FOOTER
     .cards-global figure:not(:last-child) {
         margin-right: 0;
     }
-    .cards-global figcaption{
+    .cards-global figure figcaption{
         margin-top: 10px;
         margin-bottom: 30px;
     }
